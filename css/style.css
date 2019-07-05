@@ -93,32 +93,39 @@ div.calc {
 
 div.calc-txt textarea {
   width: 236px;
-  height: 55px;
+  height: 60px;
   text-align: right;
   font-size: 1.5em;
   resize: none;
 }
 
-div.calc-btn-lvl1 input[type="button"] {
-  width: 78px;
-  height: 30px;
+input#btn_backspace {
+  width: 119px;
+  height: 40px;
   color: red;
 }
 
-div.calc-btn-lvl2 input[type="button"] {
-  width: 45px;
+input#btn_C {
+  color: red;
+}
+
+input#btn_0 {
+  width: 119px;
+}
+
+input.calc-btn {
+  width: 57px;
   height: 40px;
 }
 
-div.calc-btn-lvl2 input[type="button"] {
-  width: 45px;
-  height: 40px;
-}
-
-div.calc-btn-lvl2 input.num {
+input.calc-btn-num {
   color: blue;
 }
 
-div.calc-btn-lvl2 input.act {
+input.calc-btn-act, input.calc-btn-result {
   color: red;
+}
+
+input.calc-btn-sign {
+  color: black;
 }
