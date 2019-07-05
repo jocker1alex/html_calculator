@@ -25,16 +25,19 @@ function getClickBtn(btn) {
             str = btn;
           }
         }
+        if(strLength == maxLength && lines[1] == '=') { //если строка полная и уже был отображен результат вычислений, то ничего в textarea на 2-ой и 3-ей линиях не менять -  переписываем как есть
+          str = str + '\r\n' + '=' + '\r\n' + lines[2];
+        }
         break;
       case btn == '.':
-        if(strLength < maxLength) {
+        if(strLength < (maxLength - 1)) {
           if(str.slice(-1) in numbers && lines[1] != '=') {//если последний символ - цифра, то ставим после неё зяпятую
             str = str + btn;
           } else if(str == '' || lines[1] == '=') {//если пусто или уже был отображен результат вычислений, то затираем его, записывая "0,"
             str = '0.';
           }
         }
-        if(strLength = maxLength && lines[1] == '=') { //ничего в textarea не менять -  переписываем в textarea всё как есть
+        if(strLength >= (maxLength - 1) && lines[1] == '=') { //если строка полная и уже был отображен результат вычислений, то ничего в textarea на 2-ой и 3-ей линиях не менять -  переписываем как есть
           str = str + '\r\n' + '=' + '\r\n' + lines[2];
         }
         break;
@@ -49,7 +52,8 @@ function getClickBtn(btn) {
             str += btn;
           }
         }
-        if(strLength = maxLength && lines[1] == '=') {
+        // нужно доработать, чтоб сравнивалась длинна 3-ей линии textarea, а не 1-ой  
+        if(strLength == maxLength && lines[1] == '=') { //если строка полная и уже был отображен результат вычислений, то ничего в textarea на 2-ой и 3-ей линиях не менять -  переписываем как есть
           str = str + '\r\n' + '=' + '\r\n' + lines[2];
         }
         break;
