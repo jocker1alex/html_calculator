@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="js/calc.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        window.onload = clickBtn;
+    </script>
+  </head>
+  <body>
+    <div class="allpage">
+      <div class="header">
+        <div class="title">
+          <h1>Тестовое задание <i class="fa fa-cog fa-spin fa-x fa-fw"></i></h1>
+        </div>
+      </div>
+      <div class="center">
+        <div class="items">
+          <div class="item">
+            <h2>Инструкция</h2>
+            <p>Отличный вариант калькулятора для тех, кому требуется выполнять только простые арифметические действия</p>
+            <p>Приложение имеет простой и интуитивно понятный интерфейс - разобраться сможет каждый</p>
+            <p>Стоит только раз воспользоваться калькулятором, и вам захочется использовать его снова и снова!</p>
+            <p><a href="index.html">Вернуться на главную</a></p>
+          </div>
+          <div class="item">
+            <h2>Калькулятор <i class="fa fa-calculator"></i></h2>
+            <div class="calc calc-txt">
+              <textarea class="" id="result" col="24" rows="3" wrap="off" placeholder="0" readonly></textarea>
+            </div>
+            <div class="calc calc-btn-lvl1">
+              <input class="calc-btn calc-btn-spec" type="button" name="btn_calc" id="btn_backspace" value="backspace">
+              <input class="calc-btn calc-btn-spec" type="button" name="btn_calc" id="btn_C" value="C">
+              <input class="calc-btn calc-btn-act" type="button" name="btn_calc" id="btn_div" value="/">
+            </div>
+            <div class="calc calc-btn-lvl2">
+              <input class="calc-btn calc-btn-num" type="button" name="btn_calc" id="btn_7" value="7">
+              <input class="calc-btn calc-btn-num" type="button" name="btn_calc" id="btn_8" value="8">
+              <input class="calc-btn calc-btn-num" type="button" name="btn_calc" id="btn_9" value="9">
+              <input class="calc-btn calc-btn-act" type="button" name="btn_calc" id="btn_mult" value="*">
+            </div>
+            <div class="calc calc-btn-lvl2">
+              <input class="calc-btn calc-btn-num" type="button" name="btn_calc" id="btn_4" value="4">
+              <input class="calc-btn calc-btn-num" type="button" name="btn_calc" id="btn_5" value="5">
+              <input class="calc-btn calc-btn-num" type="button" name="btn_calc" id="btn_6" value="6">
+              <input class="calc-btn calc-btn-act" type="button" name="btn_calc" id="btn_sub" value="-">
+            </div>
+            <div class="calc calc-btn-lvl2">
+              <input class="calc-btn calc-btn-num" type="button" name="btn_calc" id="btn_1" value="1">
+              <input class="calc-btn calc-btn-num" type="button" name="btn_calc" id="btn_2" value="2">
+              <input class="calc-btn calc-btn-num" type="button" name="btn_calc" id="btn_3" value="3">
+              <input class="calc-btn calc-btn-act" type="button" name="btn_calc" id="btn_add" value="+">
+            </div>
+            <div class="calc calc-btn-lvl2">
+              <input class="calc-btn calc-btn-num" type="button" name="btn_calc" id="btn_0" value="0">
+              <input class="calc-btn calc-btn-sign" type="button" name="btn_calc" id="btn_point" value=".">
+              <input class="calc-btn calc-btn-result" type="button" name="btn_calc" id="btn_result" value="=">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="copyright">
+          <p>jocker1alex &copy; 2019</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

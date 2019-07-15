@@ -1,0 +1,29 @@
+{
+  "name": "calchtmlproject",
+  "version": "1.0.0",
+  "description": "Calculator",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://jocker1alex:jocker1crossfit@github.com/jocker1alex/calcHtmlProject.git"
+  },
+  "author": "jocker1alex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jocker1alex/calcHtmlProject/issues"
+  },
+  "homepage": "https://github.com/jocker1alex/calcHtmlProject#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-cache": "^1.1.2",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglifyjs": "^0.6.2",
+    "imagemin-pngquant": "^8.0.0"
+  }
+}
