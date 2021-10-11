@@ -1,2 +1,1 @@
-# calcHtmlProject
-Calculator
+Html Calculator
